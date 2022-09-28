@@ -36,7 +36,6 @@ class SqliteDatabase(object):
 
     def commit(self):
         self.connection.commit()
-        print(f'Committed changes to {self.db_name}')
 
     def __enter__(self):
         return self
